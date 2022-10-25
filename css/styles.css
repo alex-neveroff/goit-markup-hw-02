@@ -1,3 +1,198 @@
+/* Общие стили */
+
+:root {
+  --main-color: #757575;
+  --header-color: #212121;
+  --hover-color: #2196f3;
+
+  --adress-header-color: #757575;
+  --adress-footer-color: rgba(255, 255, 255, 0.6);
+
+  --logo-black-color: #000000;
+  --logo-blue-color: #2196f3;
+
+  --secondary-color: #ffffff;
+  --primary-bcg: #ffffff;
+  --secondary-bcg: #f5f4fa;
+  --footer-bcg: #2f303a;
+}
+
 body {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
+  color: var(--main-color);
+  background-color: var(--primary-bcg);
+}
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section .list,
+.header .list,
+.footer .list {
+  list-style-type: none;
+}
+.header .link:hover,
+.header .link:focus,
+.footer .link:hover,
+.footer .link:focus,
+.section .link:hover,
+.section .link:focus {
+  color: var(--hover-color);
+}
+
+/* 
+Для header та footer */
+.site-nav .link.current {
+  color: var(--hover-color);
+}
+
+.logo {
+  color: var(--logo-blue-color);
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.logo > .logo-header {
+  color: var(--logo-black-color);
+}
+.logo > .logo-footer {
+  color: var(--secondary-color);
+}
+
+.header .list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 43;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .link {
+  color: var(--header-color);
+}
+
+.footer {
+  background-color: var(--footer-bcg);
+}
+
+.footer .list {
+  color: var(--secondary-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.footer .contacts {
+  color: var(--adress-footer-color);
+}
+
+/* Для фильтра портфолио*/
+
+.portfolio-filter .button:hover,
+.portfolio-filter .button:focus {
+  background-color: var(--hover-color);
+  color: var(--secondary-color);
+}
+
+.portfolio-filter .button.current {
+  background-color: var(--hover-color);
+  color: var(--secondary-color);
+}
+
+/* Для героя */
+
+.hero {
+  background-color: var(--footer-bcg);
+  color: var(--secondary-color);
+}
+
+.hero .hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero .button {
+  background-color: var(--hover-color);
+  color: var(--secondary-color);
+}
+
+/* Основные заголовки секций */
+
+.section .title {
+  color: var(--header-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* Спрятанные заголовки */
+
+.section.portfolio .title,
+.section.features .title {
+  display: none;
+}
+
+/* Секция особенностей */
+
+.section.features .sub-title {
+  color: var(--header-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.section.features p {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* Секция команды */
+
+.section.team {
+  background-color: var(--secondary-bcg);
+}
+
+.section.team .sub-title {
+  color: var(--header-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.section.team p {
+  font-size: 16px;
+  line-height: 1.19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Секция Портфолио */
+
+.section.portfolio .sub-title {
+  color: var(--header-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.section.portfolio p {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
 }
