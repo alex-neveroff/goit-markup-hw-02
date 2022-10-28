@@ -25,6 +25,8 @@ body {
   font-family: 'Roboto', sans-serif;
   color: var(--main-color);
   background-color: var(--secondary-color);
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 .link {
   text-decoration: none;
@@ -36,9 +38,6 @@ body {
 
 /* 
 Для header */
-.site-nav .link.current {
-  color: var(--hover-blue-color);
-}
 
 .header .link:hover,
 .header .link:focus {
@@ -50,21 +49,23 @@ body {
   font-family: 'Raleway';
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
 }
 .logo > .logo-header {
   color: var(--logo-black-color);
 }
 
-.header .list {
+.header-nav,
+.header-contacts {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1, 43;
   letter-spacing: 0.02em;
 }
-
-.site-nav .link {
+.header-nav .link {
   color: var(--header-color);
+}
+
+.header-nav .link.current {
+  color: var(--hover-blue-color);
 }
 
 /* Для героя */
@@ -87,6 +88,10 @@ body {
   background-color: var(--hover-blue-color);
   color: var(--secondary-color);
   font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
   cursor: pointer;
 }
 .hero .button:hover,
@@ -94,8 +99,6 @@ body {
   background-color: var(--button-hover-color);
   color: var(--secondary-color);
 }
-
-/* Секція особливостей */
 
 /* Заховані заголовки */
 
@@ -107,20 +110,17 @@ body {
   height: 1px;
   margin: -1px;
 }
+/* Секція особливостей */
 
 .features-sub-title {
   color: var(--header-color);
-
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
 .features-text {
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 
 /* Секція команди */
@@ -156,7 +156,6 @@ body {
   font-size: 16px;
   line-height: 1.19px;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 /* Для фільтра портфоліо*/
@@ -197,7 +196,6 @@ body {
 .portfolio-text {
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
 }
 
 /* 
@@ -218,9 +216,7 @@ footer */
 .footer .list {
   color: var(--secondary-color);
   font-style: normal;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 
 .footer .contacts {
